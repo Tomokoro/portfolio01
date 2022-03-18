@@ -1,0 +1,51 @@
+@use "global" as *;
+
+
+.plan {
+    background-image: url('/images/common/bg02.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.plan__inner {
+    padding-top: rem(50);
+    padding-bottom: rem(60);
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    
+    @include mq('md') {
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
+        padding-bottom: rem(80);
+    }
+    @include mq('xl') {
+        padding-bottom: rem(150);
+    }
+}
+
+.plan__title {
+    @include mq('xl') {
+        margin-top: rem(30);
+    }
+}
+
+.plan__cards {
+    margin-top: rem(30);
+    @include mq('md') {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: rem(52);
+        justify-content: center;
+        max-width: rem(820);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: rem(50);
+    }
+    @include mq('xl') {
+        max-width: $inner2;
+        margin-top: rem(70);
+        column-gap: rem(68);
+    }
+}
+

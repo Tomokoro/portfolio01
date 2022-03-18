@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+.content-title {
+    font-size: rem(22);
+    line-height: 1.7222;
+    @include mq('xl') {
+        font-size: rem(26);
+    }
+}

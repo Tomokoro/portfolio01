@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.subpage-main-copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subpage-main-copy__title {
+    color: $white;
+    @include mq('md') {
+        font-size: 34px;
+        line-height: 1.23529;
+    }
+}

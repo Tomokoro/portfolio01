@@ -1,0 +1,41 @@
+@use "global" as *;
+
+
+.onsen__inner {
+    max-width: rem(600);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    padding-top: rem(32);
+    padding-bottom: rem(100);
+    @include mq('md') {
+        max-width: $inner;
+        padding-left: $padding-pc;
+        padding-right: $padding-pc;
+        padding-bottom: rem(120);
+    }
+    @include mq('xl') {
+        max-width: $inner2;
+        padding-bottom: rem(150);
+    }
+}
+
+.onsen__description {
+    margin-top: rem(30);
+}
+
+.onsen__contents {
+    @include mq('md') {
+        margin-top: rem(-220);
+    }
+    @include mq('xl') {
+        margin-top: rem(-200);
+    }
+}
+
+.onsen__efficacy {
+    border-top: 1px solid $line;
+    margin-top: rem(150);
+}

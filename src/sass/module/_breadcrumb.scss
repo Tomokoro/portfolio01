@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.breadcrumb {
+    display: flex;
+}
+
+.breadcrumb__item {
+    font-size: rem(14);
+}

@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.message {
+    background-image: url(/images/common/bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.message__inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    padding-top: rem(100);
+    padding-bottom: rem(80);
+    max-width: rem(500);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include mq('md') {
+        padding-left: $padding-pc;
+        padding-right: rem(100);
+        padding-top: 100px;
+        padding-bottom: 40px;
+        writing-mode: vertical-rl;
+        max-width: $inner;
+    }
+    @include mq('xl') {
+        max-width: $inner2;
+        padding-right: rem(200);
+        padding-top: 150px;
+        padding-bottom: 160px;
+    }
+}
+
+.message__title-wrapper {
+    @include mq('md') {
+    margin-left: rem(40);
+    }
+}
+
+.message__title:first-of-type {
+    @include mq('md') {
+    margin-top: rem(-65);
+    }
+}
+
+.message__title:last-of-type {
+    margin-left: rem(10);
+    @include mq('md') {
+        margin-left: rem(30);
+    }
+}
+
+.message__title {
+    padding-left: rem(16);
+    padding-right: rem(16);
+    font-size: rem(24);
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 0.3em;
+    @include mq('md') {
+    }
+}
+
+.message__text-wrapper {
+    margin-top: rem(30);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    @include mq('md') {
+    margin-top: 0;
+    margin-left: rem(30);
+    padding-left: 0;
+    padding-right: 0;
+    }
+    @include mq('xl') {
+    margin-left: rem(36);
+    }
+}
+.message__text {
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    letter-spacing: 0.4em;
+    font-size: 14px;
+    @include mq('md') {
+    padding-left: rem(10);
+    padding-right: rem(10);
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    }
+}
+
+.message__site-name-wrapper {
+    width: rem(150);
+    margin-left: auto;
+    @include mq('md') {
+        margin-left: 0;
+        margin-right: rem(50);
+    }
+    @include mq('xl') {
+        margin-right: rem(60);
+    }
+}
+
+.message__site-name {
+    padding-top: rem(50);
+    letter-spacing: 0.5em;
+    text-align: right;
+    @include mq('md') {
+    padding-top: 200px;
+    padding-left: 0;
+    font-size: rem(16);
+    line-height: 1.45;
+    }
+}

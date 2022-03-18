@@ -1,0 +1,104 @@
+@use "global" as *;
+
+
+.information__inner {
+    background-image: url('/images/common/bg03.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: rem(56);
+    padding-bottom: rem(50);
+}
+
+.information__nav {
+    max-width: $inner;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.information__nav-items {
+    writing-mode: vertical-rl;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.information__nav-item {
+    padding-left: rem(10);
+    padding-right: rem(10);
+    @include mq('xl') {
+        padding-left: rem(16);
+        padding-right: rem(16);
+    }
+}
+
+.information__nav-item a {
+    display: inline-block;
+    font-size: rem(16);
+    line-height: 1.5;
+    letter-spacing: 0.5em;
+}
+
+.information__site-logo {
+    margin-top: rem(50);
+    text-align: center;
+    @include mq('xl') {
+        margin-top: rem(120);
+    }
+}
+
+.information__logo img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    @include mq('xl') {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.information__name-logo img{
+    display: inline-block;
+    width: 100px;
+    @include mq('xl') {
+        width: 145px;
+    }
+}
+
+.information__address {
+    margin-top: rem(30);
+    text-align: center;
+    @include mq('xl') {
+    margin-top: rem(60);
+    }
+}
+
+.information__contact {
+    text-align: center;
+    @include mq('xl') {
+        margin-top: rem(20);
+    }
+}
+
+.information__address span,
+.information__contact span {
+    line-height: 1.8;
+}
+
+.information__post-code {
+    margin-right: rem(16);
+    font-size: 14px;
+}
+
+.information__location {
+    font-size: 14px;
+}
+
+.information__tel-number {
+    font-size: 13px;
+    margin-right: rem(10);
+}
+
+.information__fax-number {
+    font-size: 13px;
+}

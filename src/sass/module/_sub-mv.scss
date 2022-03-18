@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.sub-mv__wrapper {
+    margin-top: 70px;
+}
+.sub-mv__img {
+    position: relative;
+    width: 100%;
+}
+
+.sub-mv__img::before {
+    display: block;
+    content: "";
+    padding-top: 56.197916%;
+    @include mq('md') {
+        padding-top: 26.04166%;
+    }
+}
+
+.sub-mv__img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

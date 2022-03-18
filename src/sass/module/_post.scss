@@ -1,0 +1,31 @@
+@use "global" as *;
+
+
+.post__title {
+    font-size: 20px;
+    line-height: 1.3333;
+    @include mq('xl') {
+        font-size: 24px;
+    }
+}
+
+.post__text {
+    font-size: 14px;
+    line-height: 2;
+    margin-top: rem(23);
+    @include mq('xl') {
+        font-size: 16px;
+    }
+}
+
+.post__caution {
+    margin-top: rem(23);
+}
+
+.post__caution-text {
+    font-size: 13px;
+    line-height: 1.5;
+    @include mq('xl') {
+        font-size: 14px;
+    }
+}

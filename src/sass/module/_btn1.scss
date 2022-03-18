@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.btn1 {
+    display: inline-block;
+    background-color: $btn;
+    position: relative;
+}

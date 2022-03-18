@@ -1,0 +1,79 @@
+@use "global" as *;
+
+
+.news-contents {
+    @include mq('md') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 46px;
+    row-gap: 16px;
+    justify-content: center;
+    }
+    @include mq('xl') {
+        row-gap: 35px;
+    }
+}
+
+.news-contents__item1 {
+    display: block;
+    background-color: $gray;
+    display: flex;
+    padding: rem(15) rem(10);
+}
+
+.news-contents__item1:nth-child(n+2) {
+    margin-top: rem(30);
+    @include mq('md') {
+        margin-top: 0;
+    }
+}
+
+.news-contents__item2 {
+    display: block;
+    background-color: $pink;
+    display: flex;
+    padding: rem(15) rem(10);
+}
+
+.news-contents__item2:nth-child(n+2) {
+    margin-top: rem(30);
+    @include mq('md') {
+        margin-top: 0;
+    }
+}
+
+.news-contents__img {
+    position: relative;
+    max-width: rem(70);
+    width: 100%;
+    margin-right: rem(30);
+    @include mq('xl') {
+    max-width: rem(90);
+    }
+}
+
+.news-contents__img::before {
+    display: block;
+    content: "";
+    padding-top: 97.087378%;
+}
+
+.news-contents__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-contents__date {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.news-contents__text {
+    font-size: 14px;
+}

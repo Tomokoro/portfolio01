@@ -1,0 +1,264 @@
+@use "global" as *;
+
+
+// * {
+// 	outline: 1px solid red;
+// }
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color:transparent;
+}
+
+.header.change {
+    background-color: $white;
+    transition: .4s;
+}
+
+.header.header--white {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: $white;
+    transition: 0.5s;
+}
+
+.header.change {
+    background-color: $white;
+}
+
+.header__inner {
+    padding: rem(10) rem(16) rem(16) rem(8);
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mq('md') {
+        justify-content: start;
+    }
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: inherit;
+    position: relative;
+    padding: rem(20) rem(16) 0 rem(16);
+    z-index: 500;
+    @include mq('md') {
+        width: 200px;
+        margin-right: rem(90);
+    }
+    @include mq('xl') {
+        width: 220px;
+    }  
+}
+
+.header__logo2 {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: inherit;
+    position: relative;
+    padding: rem(20) rem(16) 0 rem(16);
+    z-index: 500;
+    @include mq('md') {
+        width: 200px;
+        margin-right: rem(90);
+    }
+    @include mq('xl') {
+        width: 220px;
+    }  
+}
+
+.header__logo--black {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: inherit;
+    position: relative;
+    padding: rem(20) rem(16) 0 rem(16);
+    
+    @include mq('md') {
+        width: 200px;
+        margin-right: rem(90);
+    }
+    @include mq('xl') {
+        width: 220px;
+    }  
+}
+
+.js-logo.change {
+    display: none;
+}
+
+.js-logo2 {
+    display: none;
+
+}
+
+.js-logo2.change {
+    display: flex;
+}
+
+.header__logo a,
+.header__logo2 a{
+    display: inline-block;
+}
+
+.header__logo2 a{
+    margin-right: rem(6);
+}
+
+.header__logo img,
+.header__logo2 img {
+    display: inline-block;
+}
+
+.header__logo a:first-child {
+    margin-right: rem(15);
+    
+}
+
+.header__btn {
+    position: absolute;
+    top: rem(10);
+    right: rem(60);
+    @include mq('md') {
+        right: rem(30);
+    }
+}
+
+.header__btn img {
+    display: inline-block;
+    width: rem(18);
+    height: rem(18);
+    position: absolute;
+    top: rem(9);
+    left: rem(16);
+    @include mq('md') {
+        width: rem(20);
+        height: rem(20);
+        top: rem(10);
+        left: rem(30);
+    }
+    @include mq('xl') {
+        top: rem(14);
+        left: rem(40);
+
+    }
+}
+
+.header__btn span {
+    display: inline-block;
+    color: $white;
+    font-size: 13px;
+    padding: rem(9) rem(20) rem(9) rem(40);    
+    @include mq('md') {
+        font-size: 14px;
+        padding: rem(10) rem(26) rem(10) rem(54);
+    }
+    @include mq('xl') {
+        font-size: 16px;
+        padding: rem(12) rem(48) rem(12) rem(70);    
+    }
+}
+
+.header__hamburger {
+    position: relative;
+    width: rem(24);
+    height: rem(14);
+    margin-top: rem(6);
+    z-index: 5000;
+    cursor: pointer;
+}
+
+.header__hamburger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $white;
+    border-radius: 4px;
+    z-index: 5000;
+}
+
+.header__hamburger span.change {
+    background-color: $black;
+}
+
+.header__hamburger.header__hamburger--black span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $black;
+    border-radius: 4px;
+    z-index: 5000;
+}
+
+.header__hamburger, .header__hamburger span {
+    display: inline-block;
+    transition: all .5s;
+    box-sizing: border-box;
+}
+
+.header__hamburger span:nth-of-type(1) {
+    top: 0;
+}
+
+.header__hamburger span:nth-of-type(2) {
+    top: 6px;
+}
+
+.header__hamburger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+//   ボタンを押したときの動き
+.header__hamburger.active span:nth-of-type(1) {
+    -webkit-transform: translateY(6px) rotate(-40deg);
+    transform: translateY(6px) rotate(-40deg);
+}
+.header__hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+.header__hamburger.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-6px) rotate(40deg);
+    transform: translateY(-6px) rotate(40deg);
+}
+
+.header__pc-nav{
+    height: inherit;
+}
+
+.header__sp-nav{
+    background-color: $white;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    overflow-y: scroll;
+    transform: translateX(100%);
+    transition: all .5s;
+}
+
+.header__sp-nav.open {
+    transform: translateX(0);
+}
+
+
+

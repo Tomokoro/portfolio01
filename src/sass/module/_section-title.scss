@@ -1,0 +1,20 @@
+@use "global" as *;
+
+
+.section-title {
+    text-align: center;
+}
+
+.section-title__img img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.section-title__header {
+    font-size: 24px;
+    line-height: 1.5;
+    @include mq('md') {
+        font-size: 26px;
+    }
+}

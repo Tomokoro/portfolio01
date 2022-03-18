@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.efficacy__title {
+    margin-top: rem(90);
+    text-align: center;
+}
+
+.efficacy__table {
+    margin-top: rem(47);
+    @include mq('md') {
+        max-width: $inner;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.efficacy__block {
+    border-top: 1px solid $line;
+    padding: rem(14) 0;
+    display: flex;
+}
+
+.efficacy__block:last-child {
+    border-bottom: 1px solid $line;
+}
+
+.efficacy__item1 {
+    width: 20%;
+    @include mq('md') {
+        width: 28%;
+    }
+}
+
+.efficacy__item2 {
+    width: 80%;
+    @include mq('md') {
+        width: 72%;
+    }
+}

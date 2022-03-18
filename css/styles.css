@@ -265,7 +265,7 @@ select::-ms-expand {
 }
 
 .article__bg {
-  background-image: url("/images/common/bg01.jpg");
+  background-image: url("https://github.com/Tomokoro/portfolio01/blob/main/images/common/bg01.jpg?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -300,7 +300,7 @@ select::-ms-expand {
 }
 
 .article__bg--reverse {
-  background-image: url("/images/common/bg01.jpg");
+  background-image: url("https://github.com/Tomokoro/portfolio01/blob/main/images/common/bg01.jpg?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -901,7 +901,7 @@ select::-ms-expand {
 }
 
 .information__inner {
-  background-image: url("/images/common/bg03.jpg");
+  background-image: url("https://github.com/Tomokoro/portfolio01/blob/main/images/common/bg03.jpg?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1571,7 +1571,7 @@ select::-ms-expand {
 }
 
 .access {
-  background-image: url("/images/common/bg01.jpg");
+  background-image: url("https://github.com/Tomokoro/portfolio01/blob/main/images/common/bg01.jpg?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1729,7 +1729,7 @@ select::-ms-expand {
 }
 
 .message {
-  background-image: url(/images/common/bg01.jpg);
+  background-image: url(https://github.com/Tomokoro/portfolio01/blob/main/images/common/bg01.jpg?raw=true);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2230,7 +2230,7 @@ select::-ms-expand {
 }
 
 .plan {
-  background-image: url("/images/common/bg02.jpg");
+  background-image: url("https://github.com/Tomokoro/portfolio01/blob/main/images/common/bg02.jpg?raw=true");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
